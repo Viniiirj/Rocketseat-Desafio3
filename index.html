@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avalie a sua mentoria</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="image/avaliacao.png" type="image/">
+</head>
+<body>
+
+  <div class="page">
+    <header>
+      <h1>avalie a sua mentoria</h1>
+      <p>Chegou a hora de avaliar o seu mentor. Bora lá?</p>
+      <img src="image/logo.svg" alt="Desenho simbolizando avaliação contem 3 estrelas de um total de 5 estrelas">
+    </header>
+    <div class="header">
+      <h2>Informações pessoais</h2>
+      
+    </div>
+    <div class="info">
+     
+    <form id="formulario">
+      <fieldset>
+          <div class="fieldset-wrapper">
+            <div class="col-2">
+              <div class="input-wrapper">
+                
+                <label for="mentorship-name">Nome*</label>
+                <input type="text" id="mentorship-name" required>
+              </div>
+              <div class="input-wrapper">
+                <label for="mentorship-lastname">Sobrenome*</label>
+                <input type="text" id="mentorship-lastname" required>
+              </div>
+                    </div>
+            
+                    <div class="input-wrapper">
+            <label for="mentorship-email">E-mail* <span>(digite um email válido)</span></label>
+            <input type="email" id="mentorship-email" required>
+                    </div>
+          </div>
+
+
+      </fieldset>
+
+      <fieldset>
+        <div class="fieldset-wrapper">
+          <legend>Informações do mentor*</legend>
+
+            <div class="select">
+              <div class="input-wrapper">
+                <label for="mentorship-mentor">Selecione quem foi o seu mentor*</label>
+                <select id="mentorship-mentor"  required>
+                  <option value="" selected>-- SELECIONE --</option>
+                  <option value="mentor1">Tony Robbins</option>
+                  <option value="mentor2">José Roberto Marques</option>
+                  <option value="mentor3">Arnold Schwarzenegger</option>
+                  <option value="mentor4">Anthony Hopkins</option>
+                  <option value="mentor5">Hugh Jackman</option>
+                  <option value="mentor6">Martin Sheen</option>
+                  <option value="mentor7">Erin Brockovich</option>
+              </select>
+              </div>
+            </div>
+
+            <div class="input-wrapper">
+              <label for="mentorship-info">Feedback sobre o mentor*</label>
+              <textarea id="mentorship-info" required></textarea>
+            </div>
+
+            <div class="checkbox-wrapper">
+              <input type="checkbox" id="mentor-check">
+              <label for="mentor-check">Todas as minhas dúvidas foram esclarecidas durante a mentoria.</label>
+            </div>
+        </div>
+
+
+    </fieldset>
+
+    <fieldset>
+      <div class="fieldset-wrapper">
+        <legend>Agendando próxima mentoria</legend>
+          <div class="col-3">
+            <div class="input-wrapper">
+              <label for="mentorship-date">Data* <span>(DD/MM/AAAA)</span></label>
+              <input type="date" id="mentorship-date" required>
+            </div>
+            <div class="input-wrapper">
+              <label for="mentorship-begin">Das*</label>
+              <input type="time" id="mentorship-begin" required>
+            </div>
+            <div class="input-wrapper">
+              <label for="mentorship-end">Até*</label>
+              <input type="time" id="mentorship-end" required>
+            </div>
+          </div>
+          
+          <div class="footer">
+            <input type="submit" class="button" value="Salvar">
+          </div>
+      </div>
+          
+  </div>
+
+
+  </fieldset>
+
+    </form>
+
+  </div>
+  
+</body>
+</html>
